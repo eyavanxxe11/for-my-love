@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(135deg, #ffe6f0, #f8f8f8, #ffe6f0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Floating hearts animation */
+        .heart {
+            position: absolute;
+            color: #ff69b4;
+            font-size: 20px;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 20%; animation-delay: 1s; }
+        .heart:nth-child(3) { left: 30%; animation-delay: 2s; }
+        .heart:nth-child(4) { left: 40%; animation-delay: 3s; }
+        .heart:nth-child(5) { left: 50%; animation-delay: 4s; }
+        .heart:nth-child(6) { left: 60%; animation-delay: 5s; }
+        .heart:nth-child(7) { left: 70%; animation-delay: 0s; }
+        .heart:nth-child(8) { left: 80%; animation-delay: 1s; }
+        .heart:nth-child(9) { left: 90%; animation-delay: 2s; }
+        .heart:nth-child(10) { left: 15%; animation-delay: 3s; }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            border: 3px solid #ffb6c1;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 90vw;
+            width: 400px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .card h1 {
+            font-size: 1.5em;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .button {
+            background: #ffb6c1;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #ff69b4;
+        }
+
+        .response {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ff69b4;
+        }
+
+        .heart-animation {
+            display: none;
+            font-size: 2em;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 95vw;
+                padding: 15px;
+            }
+            .card h1 {
+                font-size: 1.3em;
+            }
+            .card p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating hearts -->
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+    <div class="heart">💓</div>
+    <div class="heart">💘</div>
+    <div class="heart">💝</div>
+    <div class="heart">💞</div>
+    <div class="heart">💟</div>
+    <div class="heart">❣️</div>
+
+    <div class="card">
+        <h1>Happy Valentine’s Day, lovie. 🤍</h1>
+        <p>I don’t even know where to start because how do you even put into words the kind of love that feels like safety, comfort, excitement, and forever all at the same time?</p>
+        <p>Before you, love was just a word I heard in songs. Now it’s something I feel in my chest every single day. It’s in the way you say my name. It’s in the way you worry about me. It’s in the way you get scared of losing me. It’s in the way you try so hard for us.</p>
+        <p>You don’t even realize how much you mean to me.</p>
+        <p>You make me feel chosen. Not temporary. Not convenient. Not “for now.” But chosen.</p>
+        <p>And in a world where people leave so easily, that means everything.</p>
+        <p>I know sometimes you get scared that I’ll leave. I know sometimes your mind overthinks and tells you things that aren’t true. But please hear me when I say this: I am here because I want to be. I stay because I choose to. I love you not out of obligation, not out of habit, but because my heart feels peaceful with you.</p>
+        <p>You are not someone I’m going to wake up one day and decide I’m tired of. You are someone I want to wake up next to, even on the messy days. Even on the days we argue. Even on the days when we’re both stubborn and emotional. Because loving you isn’t about perfection — it’s about choosing each other despite everything.</p>
+        <p>I love the way you care.</p>
+        <p>I love the way you protect.</p>
+        <p>I love the way you get a little jealous (because it reminds me you value me).</p>
+        <p>I love the way you try to be strong but still show your soft side with me.</p>
+        <p>You once said you would fight for us, even if the world didn’t understand. But what you don’t know is… I would do the same. I would stand beside you. I would defend us. I would protect what we have. Because what we have is not something small. It’s not something shallow. It’s real.</p>
+        <p>You are my comfort person.</p>
+        <p>My safe place.</p>
+        <p>My best friend.</p>
+        <p>My favorite notification.</p>
+        <p>My calm in chaos.</p>
+        <p>And even when we’re not together physically, I carry you with me. In my thoughts. In my decisions. In my prayers.</p>
+        <p>Yes, I pray for you.</p>
+        <p>I pray for your dreams.</p>
+        <p>I pray for your fears.</p>
+        <p>I pray for your healing.</p>
+        <p>I pray for our future.</p>
+        <p>I don’t know what the future looks like exactly, but if it has you in it, I’m not scared of it.</p>
+        <p>Thank you for loving me the way you do.</p>
+        <p>Thank you for reassuring me.</p>
+        <p>Thank you for trying.</p>
+        <p>Thank you for staying.</p>
+        <p>And if there ever comes a time when you doubt yourself, or doubt us, I hope you come back to this letter and remember that someone out there loves you deeply, intentionally, and seriously.</p>
+        <p>I don’t promise that we’ll never have hard days.</p>
+        <p>I don’t promise that everything will always be perfect.</p>
+        <p>But I promise this:</p>
+        <p>I will choose you today.</p>
+        <p>Like I chose you yesterday.</p>
+        <p>And like I will choose you tomorrow.</p>
+        <p>Happy Valentine’s Day, my love.</p>
+        <p>You are my favorite “us.”</p>
+        <p>Forever yours,</p>
+        <p>Your girl 🤍</p>
+        <p>Will you still be my Valentine today… and every year after this? 💘</p>
+        <button class="button" onclick="showResponse()">Forever Yours 🤍</button>
+        <div class="response">
+            <div class="heart-animation">💖</div>
+            <p>I love you so much.</p>
+        </div>
+    </div>
+
+    <script>
+        function showResponse() {
+            const response = document.querySelector('.response');
+            const heart = document.querySelector('.heart-animation');
+            response.style.display = 'block';
+            heart.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
